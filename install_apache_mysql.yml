@@ -1,0 +1,13 @@
+---
+
+- hosts: webservers
+  become: yes
+
+  roles:
+    - webservers
+
+- hosts: Ubuntu_Node
+  become: yes
+
+  roles:
+    - Ubuntu_Node
